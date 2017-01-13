@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>REASEGURADORA PRIUS</title>
+
+  <!-- CSS  -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+  <script src="http://maps.google.com/maps/api/js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+
+      <ul class="right hide-on-med-and-down">
+        <li>
+           <a 
+
+        </li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <!-- mooodaalllll  -->  
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal modal-fixed-footer">
+    <div class="modal-content">
+                           
+                            <!--Header-->
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h3><i class="fa fa-user"></i> Login</h3>
+                            </div>
+                            
+                            <!--Body-->
+                            <form action="login.php" method="POST" >
+                            <div class="modal-body">
+                                <div class="md-form">
+                                    <i class="fa fa-envelope prefix"></i>
+                                    <input type="text" id="form2" name="usuario" class="form-control">
+                                    
+                                </div>
+
+                                <div class="md-form">
+                                    <i class="fa fa-lock prefix"></i>
+                                    <input type="password" id="form3" name="password" class="form-control">
+                                    
+                                </div>
+                                <div class="text-xs-center">
+                                    <input type="submit" class="btn btn-primary btn-lg" value="Login">
+                                </div>  
+                            </div>
+                            </form>
+                            
+                            <!--Footer-->
+                            <div class="modal-footer">
+                                <div class="options">
+                                    <a href="#">Regístrese</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.Content-->
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Cerrar</a>
+    </div>
+    </div>
+
+  
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2">Reaseguradora PRIUS</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">Visión integral de servicio en la intermediación de reaseguro!</h5>
+          <p>Inspirando en nuestros clientes confianza y tranquilidad</p>
+        </div>
+        <div class="row center">
+          <button data-target="modal1" class="btn modal-trigger">Entrar</button>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <!--Card image-->
+                    <div class="view overlay hm-white-slight">
+                        <img src="img/avila.jpg" class="img-fluid" alt="">
+                        <a href="#">
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+                    <!--/.Card image-->
+
+                    <!--Card content-->
+                    <div class="card-block">
+                        <!--Title-->
+                        <h4 class="card-title">Seguros Avila</h4>
+                        <!--Text-->
+                        <p class="card-text">C.A. DE SEGUROS ÁVILA
+                                                RIF J-00034021-8
+                                                Inscrita en la Superintendencia de la Actividad Aseguradora Bajo el Nº 1 </p>
+                        <a href="http://www.segurosavila.com" target="_blank" class="btn btn-primary">Visitar pagina </a>
+                    </div>
+                    <!--/.Card content-->
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <!--Card image-->
+                    <div class="view overlay hm-white-slight">
+                        <img src="img/prius.jpg" class="img-fluid" alt="">
+                        <a href="#">
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+                    <!--/.Card image-->
+
+                    <!--Card content-->
+                    <div class="card-block">
+                        <!--Title-->
+                        <h4 class="card-title">Prius reinsurance brokers, nv.</h4>
+                        <!--Text-->
+                        <p class="card-text">Brokering to the highest standards. Main office: Kaya Naiguata #05, Matancia Willemstad, Curacao. </p>
+                       
+
+                    </div>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <!--Card image-->
+                    <div class="view overlay hm-white-slight">
+                        <div id="map-container" class="z-depth-1" style="height: 270px"> </div>
+
+                        <!--Google Maps-->
+                        
+                        <script>
+                            function init_map() {
+                                var var_location = new google.maps.LatLng(10.493178, -66.848767);
+                                var var_mapoptions = {
+                                    center: var_location,
+                                
+                                    zoom: 16
+                                };
+                                var var_marker = new google.maps.Marker({
+                                    position: var_location,
+                                    map: var_map,
+                                    title: "New York"
+                                });
+
+                                var var_map = new google.maps.Map(document.getElementById("map-container"),
+                                    var_mapoptions);
+
+                                var_marker.setMap(var_map);
+
+                            }
+
+                            google.maps.event.addDomListener(window, 'load', init_map);
+
+                        </script>
+                        
+                    </div>
+                    <!--/.Card image-->
+
+                    <!--Card content-->
+                    <div class="card-block">
+                        <!--Title-->
+                        <h4 class="card-title">Ubicanos</h4>
+                        <!--Text-->
+                        <p class="card-text">Torre Británica. Av. Jose Felix Sosa Altamira Caracas.</p>
+                       
+                    </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Quienes somos</h4>
+          <p class="left-align light">
+        Prius, Reinsurance Brokers, N. V., es una empresa que nace con una visión integral de servicio en la intermediación de reaseguro, apoyada en valores fundamentales y apegada a las normas y prácticas transparentes en la transferencia de riesgos  y dirigida por personal especializado con más de cuarenta años en la Industria de Seguro, generando con ello, respuestas y resultados acordes y satisfactorios a los requerimientos de nuestros Clientes y de esta manera inspirando en ellos la confianza y tranquilidad tan necesaria en nuestra actividad.
+      
+        
+
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="js/tether.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+
+    
+  <script> $(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal-trigger').leanModal();
+  });</script>
+
+  </body>
+</html>
