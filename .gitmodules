@@ -1,0 +1,3 @@
+[submodule "public/libs"]
+	path = public/libs
+	url = https://github.com/sanchezgregory/libs.git
